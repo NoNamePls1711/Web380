@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทำเนียบรุ่น</title>
+    <link rel="stylesheet" href="css/mb.css">
+    <style>
+      html, body {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto; /* ทำให้เลื่อนได้ */
+      }
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #bfffcd;
+          display: flex;
+          flex-direction: column; /* จัดเรียงเนื้อหาในแนวตั้ง */
+          align-items: center; /* จัดแนวเนื้อหากลางแนวขวาง */
+      }
+      header {
+          width: 100%;
+          padding: 10px;
+          background-color: #f4d579;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .navber {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .link {
+          list-style: none;
+          display: flex;
+          margin: 0;
+          padding: 0;
+      }
+      .link li {
+          margin-left: 20px;
+      }
+      .link a {
+          text-decoration: none;
+          color: #3e79b8;
+      }
+      .link a:hover {
+          text-decoration: underline;
+      }
+      .container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ใช้คอลัมน์อัตโนมัติตามขนาดหน้าจอ */
+          gap: 10rem; /* ลดระยะห่างระหว่างการ์ด */
+          padding: 0; /* เพิ่ม padding รอบๆ การ์ด */
+          box-sizing: border-box;
+          width: 100%;
+          max-width: 1600px; /* จำกัดความกว้างสูงสุดของคอนเทนเนอร์ */
+      }
+      .card {
+          width: 100%;
+          max-width: 100%; /* ใช้ความกว้างเต็มของคอนเทนเนอร์ */
+          border: 2px solid #040404; /* เส้นขอบทึบแบบ solid */
+          border-radius: 8px; /* มุมโค้งมนของการ์ด */
+          overflow: hidden;
+          background-clip: padding-box;
+          transition: transform 0.2s;
+      }
+      .card:hover {
+          transform: scale(1.05);
+      }
+      .card img {
+          width: 100%;
+          height: auto;
+      }
+      .card-content {
+          padding: 16px;
+          text-align: center; /* จัดข้อความให้อยู่กลาง */
+          background-color: #b1f8f3c2;
+      }
+      .card-content h2 {
+          margin: 0;
+          font-size: 18px;
+      }
+      .card-content p {
+          margin: 0 0 16px;
+          color: #555;
+      }
+      .card-content a {
+          text-decoration: none;
+          color: #007bff;
+          font-weight: bold;
+      }
+      .card-content a:hover {
+          text-decoration: underline;
+      }
+      h2 {
+          margin: 20px 0; /* ระยะห่างบนและล่าง */
+          font-size: 24px; /* ขนาดตัวอักษร */
+          text-align: center; /* จัดข้อความให้อยู่กลาง */
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navber">
+          <div class="logo">
+          </div>
+          <ul class="link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Member</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+      </header>
+    
+<div class="col-m">
+      <h2>
+        <center>ทำเนียบรุ่น สาขาวิทยาการคอม</center>
+      </h2>
+      <div class="container">
+          <div class="card">
+                  <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+                  <div class="card-content">
+                      <a href="" target=""><center>รุ่นที่1</center></a>
+                  </div>
+              </a>
+          </div>
+          <div class="card">
+              <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+              <div class="card-content">
+                  <a href="" target=""><center>รุ่นที่2</center></a>
+              </div>
+          </a>
+      </div>
+      <div class="card">
+          <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+          <div class="card-content">
+              <a href="" target=""><center>รุ่นที่3</center></a>
+          </div>
+      </a>
+  </div>
+  <div class="card">
+      <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+      <div class="card-content">
+          <a href="" target=""><center>รุ่นที่4</center></a>
+      </div>
+  </a>
+  </div>
+  <div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่5</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่6</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่7</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่8</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่9</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่10</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่11</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่12</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่13</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่14</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่15</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่16</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่17</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่18</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่19</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่20</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่21</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่22</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่23</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่24</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่25</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่26</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/CB-07-300x200.jpeg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่27</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/husky-5-1 (2).jpg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่28</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/husky-5-1 (2).jpg" alt="">
+    <div class="card-content">
+        <a href="Profile.html" target=""><center>รุ่นที่29</center></a>
+    </div>
+</a>
+</div>
+<div class="card">
+    <img src=".vscode/image/husky-5-1 (2).jpg" alt="">
+    <div class="card-content">
+        <a href="" target=""><center>รุ่นที่30</center></a>
+    </div>
+</a>
+</div>
+      </div>
+</body>
+</html>

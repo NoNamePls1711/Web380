@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลส่วนบุคคล</title>
+    <link rel="stylesheet" href="css/info.css">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto; /* ทำให้เลื่อนได้ */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column; /* จัดเรียงเนื้อหาในแนวตั้ง */
+            align-items: center; /* จัดแนวเนื้อหากลางแนวขวาง */
+        }
+        header {
+            width: 100%;
+            padding: 10px;
+            background-color: #f4d579;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navber {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .link li {
+            margin-left: 20px;
+        }
+        .link a {
+            text-decoration: none;
+            color: #3e79b8;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* ใช้คอลัมน์อัตโนมัติตามขนาดหน้าจอ */
+            gap: 10rem; /* ลดระยะห่างระหว่างการ์ด */
+            padding: 0; /* เพิ่ม padding รอบๆ การ์ด */
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 1600px; /* จำกัดความกว้างสูงสุดของคอนเทนเนอร์ */
+        }
+        h2 {
+            margin: 20px 0; /* ระยะห่างบนและล่าง */
+            font-size: 24px; /* ขนาดตัวอักษร */
+            text-align: center; /* จัดข้อความให้อยู่กลาง */
+        }
+        /* CSS สำหรับการปรับขนาดรูปภาพ */
+        img {
+            max-width: 100%; /* รูปภาพไม่เกินความกว้างของคอนเทนเนอร์ */
+            height: auto; /* ความสูงปรับอัตโนมัติเพื่อรักษาสัดส่วน */
+            display: block; /* ป้องกันช่องว่างด้านล่าง */
+            margin: 15px auto; /* จัดกลางรูปภาพ */
+        }
+        p {
+            text-align: center; /* ตรงกลาง */
+            font-size: 25px; /* ขนาดตัวอักษร */
+            margin: 10px 0; /* ระยะห่างด้านบนและล่าง */
+            width: 100%; /* ใช้ความกว้างเต็มที่ของคอนเทนเนอร์ */
+            max-width: 600px; /* จำกัดความกว้างสูงสุดของข้อความ */
+            padding: 0 15px; /* เพิ่ม padding ซ้ายและขวา */
+        }
+        .highlight-blue {
+            color: #0000FF; /* เปลี่ยนสีข้อความเป็นสีน้ำเงิน */
+        }
+      </style>
+</head>
+
+<body>
+    <header>
+        <div class="navber">
+          <div class="logo">
+          </div>
+          <ul class="link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Member</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+      </header>
+      <img src=".vscode/image/364815536_259888846819368_2035169883650645611_n.jpg" width="300" height="200" alt="">
+      <p>ชื่อ-นามสกุล         ศรายุทร์ จันทร์แดง</p>
+      <p>รหัสนัศึกษา          6604101***</p>
+      <p>ที่อยู่           **********</p>
+      <p>โทร           083*******</p>
+      <p class="highlight-blue">งานหนักไม่เคยฆ่าคน</p>
+
+</body>
+</html>
