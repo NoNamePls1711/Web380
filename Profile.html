@@ -15,11 +15,24 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #bfffcd;
+            background: linear-gradient(135deg, 
+        #E0F7FA, /* ฟ้าอ่อนพาสเทล */
+        #B3E5FC, /* ฟ้าอ่อนพาสเทลเข้มขึ้น */
+        #F8BBD0, /* ชมพูอ่อนพาสเทล */
+        #F48FB1, /* ชมพูอ่อนพาสเทลเข้มขึ้น */
+        #FCE4EC  /* ชมพูอ่อนพาสเทลปิดท้าย */
+    );
+    background-size: 200% 200%; /* ขยายขนาดของการไล่สี */
+    animation: gradient 15s ease infinite; /* ทำให้การไล่สีเคลื่อนไหว */
             display: flex;
             flex-direction: column; /* จัดเรียงเนื้อหาในแนวตั้ง */
             align-items: center; /* จัดแนวเนื้อหากลางแนวขวาง */
         }
+        @keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
         header {
             width: 100%;
             padding: 20px;
@@ -78,7 +91,7 @@
         .card-content {
             padding: 16px;
             text-align: center; /* จัดข้อความให้อยู่กลาง */
-            background-color: #b1f8f3c2;
+            background: linear-gradient(135deg, #E0F8F8, #F8E0F8, #F8F0E0, #E0F8E0);
             flex: 1;
         }
         .card-content h2 {
