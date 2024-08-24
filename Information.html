@@ -15,11 +15,23 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffffff;
+            background: linear-gradient(135deg, 
+        #D2F9FE, /* ฟ้าอ่อนพาสเทล */
+        #AEEEEE, /* ฟ้าอ่อนพาสเทลเข้มขึ้น */
+        #C6E2FF, /* ฟ้าอ่อนพาสเทลอ่อนกว่าหน่อย */
+        #D2F9FE  /* ฟ้าอ่อนพาสเทลปิดท้าย */
+    );
+    background-size: 200% 200%; /* ขยายขนาดของการไล่สี */
+    animation: gradient 10s ease infinite; /* ทำให้การไล่สีเคลื่อนไหว */
             display: flex;
             flex-direction: column; /* จัดเรียงเนื้อหาในแนวตั้ง */
             align-items: center; /* จัดแนวเนื้อหากลางแนวขวาง */
         }
+        @keyframes gradient {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
         header {
             width: 100%;
             padding: 10px;
